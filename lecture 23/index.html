@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anim,ations</title>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+       
+    }
+
+
+    .container
+    {
+width: 100vw;
+height: 100vh;
+background-color: beige;
+border: 5px solid black;
+    }
+.box
+{
+    width: 350px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 40px;
+    border: 2px solid saddlebrown;
+    padding:  20px;
+    position: relative;
+    margin: 30px;
+    /* 
+    createanimation */
+    /* animation-name: rightMovement;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-direction: reverse;
+    animation-fill-mode: forwards; */
+    animation: 5s linear 1s infinite alternate none running
+     rightMovement;
+
+}
+.box2
+{
+    width: 350px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 40px;
+    border: 2px solid saddlebrown;
+    padding:  20px;
+    position: relative;
+    margin: 30px; 
+   
+    animation: 5s ease-in 1s infinite alternate none running leftMovement;
+
+}
+.CIRCLE
+{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50px;
+    border: 2px solid yellow;
+    padding:  20px;
+    position: relative;
+    top: 30%;
+    left: 30%;
+    animation: 5s ease-in 1s infinite alternate none running CIRCLEMovement;
+
+}
+
+@keyframes rightMovement
+{
+    from{top:0;
+        left: 0;
+
+
+    }
+    to{top: 0;
+        left: 1200px;
+
+    }
+}
+@keyframes leftMovement
+{
+    from{top: 680px;
+        left: 1350px;
+
+
+    }
+    to{top: 680px;
+        left: 0;
+
+    }
+}
+@keyframes CIRCLEMovement
+{
+    0%
+    {
+        top: 1%;
+        left: 5%;
+    }
+    25%
+    {   top: 5%;
+        left: 90%;
+
+    }
+    50%
+    {
+        top: 90;
+        left:10%;
+    }
+    100%
+    {
+        top: 90;
+        left:10%;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="CIRCLE"
+        ></div>
+    <div class="box2
+    "></div>
+    
+    </div>
+    
+</body>
+</html>
